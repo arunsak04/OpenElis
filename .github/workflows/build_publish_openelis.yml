@@ -58,7 +58,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           file: package/docker/openelis/Dockerfile
           push: true
-          tags: bahmni/openelis:${{env.ARTIFACT_VERSION}},bahmni/openelis:latest
+          tags: itsolutionsdocker/openelis:${{env.ARTIFACT_VERSION}},itsolutionsdocker/openelis:latest
       - name: Push Translations to Transifex
         run: |
           bash .github/scripts/transifex.sh
