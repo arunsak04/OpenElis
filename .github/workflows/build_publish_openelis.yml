@@ -59,8 +59,3 @@ jobs:
           file: package/docker/openelis/Dockerfile
           push: true
           tags: itsolutionsdocker/openelis:${{env.ARTIFACT_VERSION}},itsolutionsdocker/openelis:latest
-      - name: Push Translations to Transifex
-        run: |
-          bash .github/scripts/transifex.sh
-        env:
-          TX_TOKEN: ${{ secrets.TX_TOKEN }}
