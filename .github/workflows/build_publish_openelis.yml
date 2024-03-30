@@ -37,7 +37,7 @@ jobs:
           echo "/tmp/ant/apache-ant-1.9.16/bin" >> $GITHUB_PATH
       - name: Set env.ARTIFACT_VERSION
         run: |
-          wget -q https://raw.githubusercontent.com/Bahmni/bahmni-infra-utils/main/setArtifactVersion.sh && chmod +x setArtifactVersion.sh
+          wget -q https://raw.githubusercontent.com/ArpchanHospital/bahmni-infra-utils/main/setArtifactVersion.sh && chmod +x setArtifactVersion.sh
           ./setArtifactVersion.sh
           rm setArtifactVersion.sh
       - name: Package
